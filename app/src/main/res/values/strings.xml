@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TripBookingPro</string>
+    <string name="travel_packages">Travel Packages</string>
+    <string name="where_do_you_want_to_be">Where do you want to be ?</string>
+    <string name="romantic_travel_packages">Romantic Travel Packages</string>
+    <string-array name="package_type">
+        <item>Classic Tour</item>
+        <item>Honeymoon Tour</item>
+        <item>Wildlife Tour</item>
+    </string-array>
+</resources>

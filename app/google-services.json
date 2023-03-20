@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "954089934703",
+    "project_id": "tripbookingpro",
+    "storage_bucket": "tripbookingpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954089934703:android:3da590dca335c360c5629a",
+        "android_client_info": {
+          "package_name": "com.sitinoldae.tripbookingpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954089934703-ab39s1o5tebu6brodcfvi08342mllv44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvGKZJnpDpUg1JCs8TLqgUA4evNPuDV4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954089934703-ab39s1o5tebu6brodcfvi08342mllv44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

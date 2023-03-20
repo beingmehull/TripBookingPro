@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/header_layout"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/base_icon_size"
+            android:layout_height="@dimen/base_icon_size"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_menu"
+            android:padding="10dp"
+            android:background="@drawable/rounded_white"
+            android:tint="@color/app_primary"
+            android:id="@+id/iv_menu_btn"
+            android:contentDescription="menu btn"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="@dimen/base_icon_size"
+            android:layout_height="@dimen/base_icon_size"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/app_primary"
+            android:padding="10dp"
+            android:background="@drawable/rounded_white"
+            android:src="@drawable/ic_user_profile"
+            android:id="@+id/iv_user_profile"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        android:id="@+id/header_title"
+        android:layout_below="@id/header_layout"
+        android:fontFamily="@font/pacifico"
+        android:textColor="@color/black"
+        android:text="@string/where_do_you_want_to_be"
+        android:textSize="30sp"
+        android:shadowColor="@color/white"
+        android:shadowDx="5"
+        android:elevation="5dp"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        tools:ignore="RtlSymmetry" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/travel_packages"
+        android:fontFamily="@font/pacifico"
+        android:textAllCaps="false"
+        android:elevation="5dp"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_hiking"
+        android:paddingStart="10dp"
+        android:id="@+id/travel_packages_btn"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="200dp"
+        android:shadowColor="@color/black"
+        android:background="@drawable/rounded_white"
+        tools:ignore="RtlSymmetry" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/romantic_travel_packages"
+        android:drawableStart="@drawable/ic_hot"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/pacifico"
+        android:textAllCaps="false"
+        android:elevation="5dp"
+        android:textSize="20sp"
+        android:id="@+id/romantic_travel_packages_btn"
+        android:layout_below="@id/travel_packages_btn"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/black"
+        android:background="@drawable/rounded_white"
+        tools:ignore="RtlSymmetry" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/add_trip_btn"
+        android:layout_alignParentRight="true"
+        android:text="Add Trip (Admin)"/>
+</RelativeLayout>

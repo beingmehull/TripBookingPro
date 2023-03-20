@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip"
+    tools:context=".AddTrips">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_selected_image"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select Package Images"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawablePadding="10dp"
+        android:id="@+id/image_selection_btn"/>
+</LinearLayout>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_package_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter package name"
+        android:minHeight="48dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_package_stops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter stops"
+        android:minHeight="48dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_package_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:minHeight="48dp" />
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Departure Date and Time"
+    android:id="@+id/departure_time_btn"/>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Arrival Date and Time"
+    android:id="@+id/arrival_time_btn"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="select package type"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_package_type"
+        android:entries="@array/package_type"
+        android:minHeight="48dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/save_package_btn"
+        android:text="Save Package"/>
+</LinearLayout>
